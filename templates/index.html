@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Question Answering App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>Question Answering App</h1>
+        </div>
+        <div class="chat-log" id="chat-log">
+            <!-- Chat messages will be added here dynamically -->
+        </div>
+        <div class="suggestions" id="suggestions">
+            {% for suggestion in suggestions %}
+                <button class="suggestion-btn">{{ suggestion }}</button>
+            {% endfor %}
+        </div>
+        <form action="" method="post" id="chat-form">
+            <input type="text" id="question" name="question" placeholder="Ask me anything...">
+            <input type="submit" value="Ask">
+        </form>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

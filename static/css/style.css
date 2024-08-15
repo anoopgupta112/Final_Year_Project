@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.chat-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.chat-header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #333;
+}
+
+.chat-log {
+    padding: 20px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.message {
+    margin-bottom: 20px;
+}
+
+.message.user {
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 40px;
+}
+
+.message.ai {
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 40px;
+}
+
+.message p {
+    margin: 0;
+}
+
+input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #444;
+}
+
+.suggestions {
+    margin-bottom: 20px;
+}
+
+.suggestion-btn {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.suggestion-btn:hover {
+    background-color: #e0e0e0;
+}

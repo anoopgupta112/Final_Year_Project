@@ -1,0 +1,7 @@
+flask
+gensim
+numpy
+pandas
+google-generativeai
+scikit-learn
+spacy
